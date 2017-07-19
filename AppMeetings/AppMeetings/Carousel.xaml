@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMeetings.Carousel"
+              Title="Carousel"
+              Icon="icon.png">
+<ContentPage>
+ <StackLayout>
+   <BoxView Color="Fuchsia"/>
+ </StackLayout> 
+</ContentPage>
+
+  <ContentPage>
+    <StackLayout>
+      <BoxView Color="Red" />
+      <Image Source="icon.png"/>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage>
+    <StackLayout>
+      <BoxView Color="Blue"/>
+    </StackLayout>
+  </ContentPage>
+</CarouselPage>
