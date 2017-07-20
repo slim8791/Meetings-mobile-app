@@ -4,8 +4,8 @@
              x:Class="AppMeetings.MainPage"
              Title="Login">
 <StackLayout Orientation="Vertical" > 
-  <Entry  Placeholder="Login" TextColor="Blue" FontSize="30"/>
-  <Entry Placeholder="Password" IsPassword="True"  FontSize="30"/>
-  <Button Text="Login !" />
+  <Entry  x:Name="loginTxt"  Placeholder="Login" TextColor="Blue" FontSize="30"/>
+  <Entry x:Name="passwordTxt" Placeholder="Password" IsPassword="True"  FontSize="30"/>
+  <Button Text="Login !" Clicked="Button_OnClicked"/>
 </StackLayout>
 </ContentPage>

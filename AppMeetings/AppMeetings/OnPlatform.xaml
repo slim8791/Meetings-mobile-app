@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMeetings.OnPlatform">
+  <Label  VerticalOptions="Center" HorizontalOptions="Center" >
+    <Label.Text>
+      <OnPlatform x:TypeArguments="x:String"
+                  Android="hello Android"
+                  iOS="hello iOS"
+                  WinPhone="hello Windows">
+                  
+      </OnPlatform>
+    </Label.Text>
+    <Label.TextColor>
+      <OnPlatform x:TypeArguments="Color"
+                  Android="Red"
+                  iOS="Fuchsia"
+                  WinPhone="Green">
+        
+      </OnPlatform>
+    </Label.TextColor>
+    <Label.FontSize>
+      <OnPlatform x:TypeArguments="x:Double"
+                  Android="50"
+                  iOS="60"
+                  WinPhone="70">
+        
+      </OnPlatform>
+    </Label.FontSize>
+    </Label>
+</ContentPage>

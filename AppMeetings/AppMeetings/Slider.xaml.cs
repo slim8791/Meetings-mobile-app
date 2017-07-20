@@ -8,12 +8,16 @@ using Xamarin.Forms;
 
 namespace AppMeetings
 {
-    public partial class Carousel : CarouselPage
+    public partial class Slider : ContentPage
     {
-        public Carousel()
+        public Slider()
         {
-            NavigationPage.SetHasBackButton(this,false);
             InitializeComponent();
+        }
+
+        private void Slider_OnValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            SliderLabel.Text = MySlider.Value.ToString();
         }
     }
 }

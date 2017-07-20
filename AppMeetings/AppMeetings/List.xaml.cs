@@ -39,5 +39,16 @@ namespace AppMeetings
 
             MyList.ItemsSource = pers;
         }
+
+        private void MenuItem_OnClicked(object sender, EventArgs e)
+        {
+            var m = ((MenuItem) sender);
+            var personne = m.CommandParameter as Personne;
+            if (personne != null)
+            {
+                DisplayAlert("Summer Trainning", "Hello " + personne.Nom + " " + personne.Prenom, "Cancel", "OK");
+            }
+
+        }
     }
 }

@@ -8,11 +8,10 @@ using Xamarin.Forms;
 
 namespace AppMeetings
 {
-    public partial class Carousel : CarouselPage
+    public partial class OnPlatform : ContentPage
     {
-        public Carousel()
+        public OnPlatform()
         {
-            NavigationPage.SetHasBackButton(this,false);
             InitializeComponent();
         }
     }

@@ -19,5 +19,12 @@ namespace AppMeetings
         {
             DisplayAlert("TEK-UP Summer Trainning", "Bonjour", "Cancel");
         }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            if(loginTxt.Text=="slim" && passwordTxt.Text=="1234")
+            Navigation.PushAsync(new Carousel());
+
+        }
     }
 }

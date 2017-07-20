@@ -12,8 +12,14 @@
           <ViewCell>
             <StackLayout>
               <Label Text="{Binding Nom}" FontSize="15"/>
-              <Label Text="Prenom" FontSize="15"/>
+              <Label Text="{Binding Prenom}" FontSize="15"/>
             </StackLayout>
+          <ViewCell.ContextActions>
+            <MenuItem Text="Show"
+                      CommandParameter="{Binding .}"
+                      IsDestructive="True"
+          Clicked="MenuItem_OnClicked"></MenuItem>
+          </ViewCell.ContextActions>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
