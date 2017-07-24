@@ -27,7 +27,7 @@ namespace AppMeetings
                 }
             };
 
-            MainPage = new NavigationPage(new MasterDetail());
+            MainPage = new NavigationPage(new Vibrate());
         }
 
         protected override void OnStart()
