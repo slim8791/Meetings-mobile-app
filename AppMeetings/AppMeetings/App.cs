@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using AppMeetings.View;
 using Xamarin.Forms;
 
 namespace AppMeetings
@@ -27,7 +27,7 @@ namespace AppMeetings
                 }
             };
 
-            MainPage = new NavigationPage(new Vibrate());
+            MainPage = new NavigationPage(new CoffeeView());
         }
 
         protected override void OnStart()
