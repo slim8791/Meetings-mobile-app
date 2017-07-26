@@ -19,6 +19,14 @@ namespace AppMeetings.Services
             return coffeelist;
         }
 
+        public async Task PostCoffees(Coffee c )
+        {
+
+            RestClient<Coffee> restclient = new RestClient<Coffee>();
+           await restclient.PostAsync(c);
+           
+        }
+
 
     }
 }

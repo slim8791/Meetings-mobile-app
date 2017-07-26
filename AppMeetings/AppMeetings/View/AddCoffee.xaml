@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:AppMeetings.ViewModel;assembly=AppMeetings"
+             x:Class="AppMeetings.View.AddCoffee">
+  <!--<ContentPage.BindingContext>
+  <viewModel:CoffeeViewModel/>
+    
+</ContentPage.BindingContext>-->
+  <StackLayout>
+  <Entry Text="{Binding MyCoffee.Nom, Mode=TwoWay}" Placeholder="Nom"/>
+  <Entry Text="{Binding MyCoffee.Adresse, Mode=TwoWay}" Placeholder="Adresse"/>
+  <Entry Text="{Binding MyCoffee.Tel, Mode=TwoWay}" Placeholder="Tel" Keyboard="Telephone"/>
+  <Button Text="Post Coffee" Command="{Binding PostCommand}"/>
+</StackLayout>
+</ContentPage>

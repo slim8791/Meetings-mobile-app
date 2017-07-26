@@ -77,6 +77,9 @@
       <DependentUpon>Vibrate.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\CoffeeViewModel.cs" />
+    <Compile Include="View\AddCoffee.xaml.cs">
+      <DependentUpon>AddCoffee.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\CoffeeView.xaml.cs">
       <DependentUpon>CoffeeView.xaml</DependentUpon>
     </Compile>
@@ -221,7 +224,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="View\AddCoffee.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\CoffeeView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

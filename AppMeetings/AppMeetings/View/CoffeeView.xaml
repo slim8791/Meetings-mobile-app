@@ -3,13 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppMeetings.View.CoffeeView"
              xmlns:local="clr-namespace:AppMeetings.ViewModel;assembly=AppMeetings">
-    
-  <ContentPage.BindingContext>
+
+  <!--  <ContentPage.BindingContext>
     <local:CoffeeViewModel>
 
     </local:CoffeeViewModel>
-  </ContentPage.BindingContext>
-  <ListView  ItemsSource="{Binding CoffeeList, Mode=Default}">
+  </ContentPage.BindingContext>-->
+  <StackLayout>
+    <Button Text="Add Coffee"  Clicked="Button_OnClicked"/>
+  <ListView  IsPullToRefreshEnabled="True" RefreshCommand="{Binding Refresh}" IsRefreshing="{Binding IsRefresh}" ItemsSource="{Binding CoffeeList, Mode=Default}">
     <ListView.ItemTemplate>
       <DataTemplate>
         <ViewCell >
@@ -22,4 +24,5 @@
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
+  </StackLayout>
 </ContentPage>
