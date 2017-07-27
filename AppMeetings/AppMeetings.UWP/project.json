@@ -6,7 +6,8 @@
     "Xam.Plugins.Messaging": "4.0.0",
     "Xam.Plugins.Notifier": "2.1.0",
     "Xam.Plugins.Vibrate": "3.0.1",
-    "Xamarin.Forms": "2.0.0.6482"
+    "Xamarin.Forms": "2.0.0.6482",
+    "Xamarin.Forms.Maps": "2.3.4.247"
   },
   "frameworks": {
     "uap10.0": {}

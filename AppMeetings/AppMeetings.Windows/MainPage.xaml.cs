@@ -20,7 +20,7 @@ namespace AppMeetings.Windows
         public MainPage()
         {
             this.InitializeComponent();
-
+            
             LoadApplication(new AppMeetings.App());
         }
     }

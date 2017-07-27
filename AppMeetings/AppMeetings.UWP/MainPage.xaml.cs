@@ -19,8 +19,8 @@ namespace AppMeetings.UWP
     {
         public MainPage()
         {
-            this.InitializeComponent();
-
+            InitializeComponent();
+            Xamarin.FormsMaps.Init("ArXCxPzo0-PK4x3Z9DIqAr0uU5AuhDIA3fH3tzPN0NbSVfgt6RqP8H3VomWyos6W");
             LoadApplication(new AppMeetings.App());
         }
     }

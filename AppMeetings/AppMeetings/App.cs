@@ -27,7 +27,7 @@ namespace AppMeetings
                 }
             };
 
-            MainPage = new NavigationPage(new CoffeeView());
+            MainPage = new NavigationPage(new MapPage());
         }
 
         protected override void OnStart()

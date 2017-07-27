@@ -27,7 +27,7 @@ namespace AppMeetings.WinPhone
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
+            Xamarin.FormsMaps.Init("ArXCxPzo0-PK4x3Z9DIqAr0uU5AuhDIA3fH3tzPN0NbSVfgt6RqP8H3VomWyos6W");
             LoadApplication(new AppMeetings.App());
         }
 

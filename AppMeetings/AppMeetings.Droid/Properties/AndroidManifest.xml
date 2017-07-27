@@ -3,5 +3,8 @@
 	<uses-sdk android:minSdkVersion="15" />
 	<uses-permission android:name="android.permission.LOCATION_HARDWARE" />
 	<uses-permission android:name="android.permission.CAMERA" />
-	<application android:label="AppMeetings.Droid" android:largeHeap="true"></application>
+	<application android:label="AppMeetings.Droid" android:largeHeap="true">
+    <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyAOrNg0cdu-_Y0cVfctP_QVLWn_v8EAIyc" />
+  </application>
 </manifest>
